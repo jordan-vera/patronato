@@ -1,0 +1,31 @@
+.card-login {
+    -webkit-border-radius: 12px; 
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 12px; 
+  
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 12px; 
+
+  background-color: rgb(212, 212, 212);
+}
+
+.info-login {
+    background-image: url("../../../assets/img/fondologin.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.info-login:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.171);
+    border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}

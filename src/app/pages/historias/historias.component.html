@@ -1,0 +1,94 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-lg-3">
+            <label>Paciente</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Marco Balero</option>
+                <option>Juan Fernando</option>
+            </select>
+        </div>
+        <div class="col-lg-3">
+            <label>Fecha nacimiento</label>
+            <input type="date" class="form-control">
+        </div>
+        <div class="col-lg-3">
+            <label>Estado civil</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Soltero</option>
+                <option>Casado</option>
+                <option>Divorciado</option>
+                <option>Unión libre</option>
+            </select>
+        </div>
+        <div class="col-lg-3">
+            <label>Profesión/Ocupación</label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-3">
+            <label>Sexo</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select>
+        </div>
+        <div class="col-lg-9">
+            <label>Motivo de la consulta</label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-4">
+            <label>Nombre del responsable</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-lg-3">
+            <label>Celular del responsable</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-lg-3">
+            <label>Teléfono del responsable</label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="text-right">
+        <button class="btn btn-primary mt-4 "><i class="far fa-save"></i> Guardar</button>
+    </div>
+
+    <div class="card card-plain">
+        <div class="card-header">
+            <h4 class="card-title"> Lista de historias</h4>
+            <input type="text" class="form-control" placeholder="Buscar historias">
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class=" text-primary">
+                        <th>Paciente</th>
+                        <th>Fecha de naciemiento</th>
+                        <th>Estado civil</th>
+                        <th>Profesión</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Manuel Sanches</td>
+                            <td>02/02/2020</td>
+                            <td>Soltero</td>
+                            <td>Ingeniero</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm mr-3">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                                <button class="btn btn-info btn-sm">
+                                    <i class="far fa-edit"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
