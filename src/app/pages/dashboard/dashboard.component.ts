@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Paciente } from 'app/models/pacientes';
+import { PacienteService } from 'app/services/zonas.service';
 import Chart from 'chart.js';
 
 
@@ -15,6 +17,24 @@ export class DashboardComponent implements OnInit{
   public chartColor;
   public chartEmail;
   public chartHours;
+
+  public cantidadPaciente: number = 0;
+
+  constructor(
+    private _pacienteService: PacienteService,
+  ) {
+    this.getPacientes();
+  }
+
+  getPacientes(): void {
+    this._pacienteService.contador().subscribe(
+      response => {
+        this.cantidadPaciente = response.response;
+      }, error => {
+        console.log(error);
+      }
+    )
+  }
 
     ngOnInit(){
       this.chartColor = "#FFFFFF";

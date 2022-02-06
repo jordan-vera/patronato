@@ -25,4 +25,8 @@ export const AppRoutes: Routes = [
     path: "login",
     loadChildren: () => import("../app/pages/login/login.module").then(m => m.LoginModule)
   },
+  {
+    path: "consultar-historia",
+    loadChildren: () => import("../app/pages/consultar-historia/consultar-historia.module").then(m => m.ConsultarHistoriaModule)
+  },
 ]

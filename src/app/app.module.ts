@@ -12,7 +12,8 @@ import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-
+import { PacienteService } from "./services/zonas.service";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -26,11 +27,16 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     }),
     SidebarModule,
     NavbarModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 10000,
+    positionClass: 'toast-bottom-right',
+    preventDuplicates: true,
+    }),
     FooterModule,
-    FixedPluginModule
+    FixedPluginModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PacienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

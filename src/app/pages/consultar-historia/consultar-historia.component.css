@@ -1,0 +1,11 @@
+.card-login {
+    -webkit-border-radius: 12px; 
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 12px; 
+  
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 12px; 
+
+  background-color: rgb(212, 212, 212);
+}
