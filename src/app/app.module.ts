@@ -12,8 +12,17 @@ import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { PacienteService } from "./services/zonas.service";
+import { PacienteService } from "./services/paciente.service";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { ProvinciaCantonService } from "./services/provinciacanton.service";
+import { GeneroService } from "./services/genero.service";
+import { VisitaService } from "./services/visita.service";
+import { UsuarioService } from "./services/usuarios.service";
+import { PersonaService } from "./services/persona.service";
+import { EspecialidadmedicaService } from "./services/especialidadmedica.service";
+import { MedicosService } from "./services/medicos.service";
+import { HistorialsesionService } from "./services/historialsesion.service";
+import { EnfermerasService } from "./services/enfermeras.service";
 
 @NgModule({
   declarations: [
@@ -36,7 +45,19 @@ import { HttpClient, HttpClientModule } from "@angular/common/http";
     FixedPluginModule,
     HttpClientModule
   ],
-  providers: [PacienteService],
+  providers: [
+    PacienteService,
+    ProvinciaCantonService,
+    GeneroService,
+    VisitaService,
+    UsuarioService,
+    PersonaService,
+    EspecialidadmedicaService,
+    MedicosService,
+    PacienteService,
+    HistorialsesionService,
+    EnfermerasService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
