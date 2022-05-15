@@ -1,28 +1,25 @@
 export class Paciente {
 
-    public idpaciente: number;
-    public cedula: string;
-    public nombres: string;
-    public direccion: string;
-    public celular: string;
-    public telefono: string;
-    public email: string;
+    public IDPACIENTE: number;
+    public IDGENERO: string;
+    public IDPERSONA: string;
+    public CONSULTAS_WEB: string;
+    public FECHA_NACIMIENTO: string;
+    public OBSERVACIONES: string;
 
     constructor(
-        idpaciente: number, 
-        cedula: string,
-        nombres: string,
-        direccion: string,
-        celular: string,
-        telefono: string,
-        email: string
+        IDPACIENTE: number, 
+        IDGENERO: string,
+        IDPERSONA: string,
+        CONSULTAS_WEB: string,
+        FECHA_NACIMIENTO: string,
+        OBSERVACIONES: string,
     ){
-        this.idpaciente = idpaciente;
-        this.cedula = cedula;
-        this.nombres = nombres;
-        this.direccion = direccion;
-        this.celular = celular;
-        this.telefono = telefono;
-        this.email = email;
+        this.IDPACIENTE = IDPACIENTE;
+        this.IDGENERO = IDGENERO;
+        this.IDPERSONA = IDPERSONA;
+        this.CONSULTAS_WEB = CONSULTAS_WEB;
+        this.FECHA_NACIMIENTO = FECHA_NACIMIENTO;
+        this.OBSERVACIONES = OBSERVACIONES;
     }
 }

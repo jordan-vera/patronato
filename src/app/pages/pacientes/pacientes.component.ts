@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Paciente } from 'app/models/pacientes';
+import { Paciente } from 'app/models/Pacientes';
 import { PacienteService } from 'app/services/zonas.service';
 import { ToastrService } from 'ngx-toastr';
 
@@ -10,8 +10,8 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class PacientesComponent implements OnInit {
 
-  public pacienteCreate: Paciente = new Paciente(0, '', '', '', '', '', '');
-  public pacienteOne: Paciente = new Paciente(0, '', '', '', '', '', '');
+  public pacienteCreate: Paciente = new Paciente(0, '', '', '', '', '');
+  public pacienteOne: Paciente = new Paciente(0, '', '', '', '', '');
   public pacientes: Paciente[];
   public busquedatxt: string = '';
 
@@ -25,7 +25,7 @@ export class PacientesComponent implements OnInit {
   }
 
   one(idpaciente, cedula, nombres, direccion, celular, telefono, email) {
-    this.pacienteOne = new Paciente(idpaciente, cedula, nombres, direccion, celular, telefono, email)
+    this.pacienteOne = new Paciente(idpaciente, cedula, nombres, direccion, celular, telefono)
   }
 
   delete(id): void {

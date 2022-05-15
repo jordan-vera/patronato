@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Paciente } from 'app/models/pacientes';
+import { Paciente } from 'app/models/Pacientes';
 import { PacienteService } from 'app/services/zonas.service';
 import Chart from 'chart.js';
 
